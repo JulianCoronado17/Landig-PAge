@@ -4,17 +4,14 @@ body{
     background-image: url(Fondo.jpg);
     margin: 0;
 }
+
 .img-superiores{
     display: flex;
     justify-content: space-between;
 }
-.img-superiores a{
-    width: 266x;
-}
 #logo{
-    width: 70%;
-    margin: 5px;
+    width: 60%;
 }
-#eva-esquina{
-    width: 30%;
+.eva_esquina{
+    width: 48%;
 }

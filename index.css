@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Sedan+SC&display=swap');
+
+body{
+    background-image: url(Fondo.jpg);
+    margin: 0;
+}
+.img-superiores{
+    display: flex;
+    justify-content: space-between;
+}
+.img-superiores a{
+    width: 266x;
+}
+#logo{
+    width: 70%;
+    margin: 5px;
+}
+#eva-esquina{
+    width: 30%;
+}

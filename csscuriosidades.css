@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@font-face {
+    font-family: Letra_NGE;
+    src: url(Farmhand-Regular.ttf);
+}
+
+body{
+    background-image: url(fondocuriosidades.png);
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.personajes ul li{
+    list-style-position: inside;
+    list-style-type: none;
+}
+section,header{
+    background-color:#1d1a2f38;
+    width:100%;
+    margin: auto;
+    text-align: center;
+    background-image: none;
+    border-radius: 20px;
+    margin: 20px;
+    backdrop-filter: blur(8px);
+    font-family: 'Righteous';
+    font-size: 45px;
+}
+
+.foto img{
+    padding: 0;
+    margin: 5px;
+    width: 100%;
+    border: 7px solid#5a1111;
+    border-radius: 50px;
+    animation: 2s img forwards
+}
+@keyframes img{
+    0%{width: 0px;}
+    100%{width: 300px;}
+}
+
+strong{
+    color: #645085;
+}
+H1{
+   font-size: 300%;
+   color:whitesmoke;
+}
+h2{
+    color:#1d1a2f;
+    
+}
+h1,H2{
+    font-family: Letra_NGE;
+}
+.container-boton{
+    display: flex;
+    justify-content: center;
+}
+.container-boton .volveramain{
+    text-decoration: solid;
+    font-size: 100%;
+    font-family: 'Righteous';
+    padding: 7px;
+    margin: 8px;
+    background-color: #ec111c;
+    width: 150px;
+    border: 0px;
+    border-radius: 22px 0;  
+    transition-property: background-color, width;
+    transition-duration: .3s;
+}
+.container-boton .volveramain:hover{
+    width: 160px;
+    background-color: #210b72;
+}
+.container-boton .volveramain a{
+    text-decoration: solid;
+    color: #fff;
+}

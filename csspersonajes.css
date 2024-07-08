@@ -6,6 +6,7 @@
 
 body{
     background-image: url(fondopersonajes.jpg);
+    background-position: bottom;
     background-attachment: fixed;
     text-align: center;
     color: #fff;
@@ -23,6 +24,7 @@ body{
 
 img{
     border-radius: 50px;
+    height: 800px;
 }
 
 .container-boton{

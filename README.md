@@ -12,4 +12,4 @@ Neon Genesis Evangelion
 ***
 ### General Info
 En desarrollo;La pagina contara con subpaginas para sus debidas pestañas, tendra un menu que sera la pagina principal, desde el cual se podra acceder a todos sus contenidos
-![Image text](file:///home/camper/Downloads/Landing%20Page.jpgfile:///home/camper/Downloads/Landing%20Page.jpg)
+TERMINAR DE REDACTARLO EN REVIEW

@@ -5,10 +5,9 @@ Neon Genesis Evangelion
 
 1. [General Info](#general-info)
 2. [Tecnologias](#tecnologias)
-3. [Historia](#historia)
-4. [Personajes](#personajes)
-5. [Curiosidades](#curiosidades)
-5. [Donde verlo](#donde-verlo)
+3. [Como Usarla](#como-usarla)
+4. [Colaboración](#colaboracion)
+5. [Preguntas Frecuentes](#preguntas-frecuentes)
 ***
 ### General Info
 Terminado;La pagina contara con subpaginas para sus debidas pestañas, tendra un menu que sera la pagina principal, desde el cual se podra acceder a todos sus contenidos

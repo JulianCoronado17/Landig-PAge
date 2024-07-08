@@ -160,3 +160,12 @@ video {
         flex-direction: column;
     }
 }
+/* @media screen and (max-width:2000px){
+#logo, #eva-esquina,aside,.titulo, .masde,.baners, .baners .baner-H, .baners .baner-P, .baners .baner-C,.baners .baner-D, span{
+    width: max-content;
+    height: max-content; 
+}   
+    
+}
+     */
+    

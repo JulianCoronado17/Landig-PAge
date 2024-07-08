@@ -1,4 +1,4 @@
-# Landig-PAge
+# Landig-Page
 Neon Genesis Evangelion
 ***
 ## Table of Contents

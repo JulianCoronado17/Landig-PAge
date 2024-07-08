@@ -9,7 +9,7 @@ Neon Genesis Evangelion
 4. [Colaboración](#colaboracion)
 5. [Preguntas Frecuentes](#preguntas-frecuentes)
 ***
-### General Info
+### General Info 
 Terminado;La pagina contara con subpaginas para sus debidas pestañas, tendra un menu que sera la pagina principal, desde el cual se podra acceder a todos sus contenidos
 ***
 ### Tecnologias
@@ -33,8 +33,8 @@ Al iniciar la pagina tendra acceso de sus opciones, accederá a la que desee, ex
 ***
 Preguntas Frecuentes
 1. **Es responsive?**
-ES un 98% responsive a todas las resoluciones _italic words_. 
+ES un 98% responsive a todas las resoluciones . 
 2. __Usa recursos Bootstrap?__ 
 Si, se usa el recurso de el Carrusel
 3. **Utiliza animaciones y transiciones?**
-Ambas se inplementan *italic words*.
+Ambas se inplementan .

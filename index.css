@@ -4,7 +4,6 @@
     src: url(Farmhand-Regular.ttf);
 }
 
-
 body{
     background-image: url(Fondo.jpg);
     margin: 0;
@@ -154,18 +153,95 @@ video {
     text-decoration: solid;
     color: #fff;
 }
+.advice{
+    display:none;
+}
+@media (max-width:300px)or (min-width:2160px) {
+    body *:not(.advice, .advice img, .min-screen, .min-screen *) {
+        display:none;
+    }
 
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        background-image: radial-gradient(#775995,#6f1cc2);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .advice {
+        display: flex;
+        flex-direction:column ;
+        position: fixed;
+        flex-direction: column;
+        top:0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        color:#fff;
+        font-size: 1.5rem;
+        margin: 30px;
+        text-align: center;
+        font-family: 'Letra_NGE';
+    }
+    img{
+        text-align: center;
+        width: 150px;
+    }
+}
+@media (min-width:2160px) {
+    body *:not(.advice, .advice img, .min-screen, .min-screen *) {
+        display:none;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        background-image: radial-gradient(#775995,#6f1cc2);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .advice {
+        display: flex;
+        flex-direction:column ;
+        position: fixed;
+        flex-direction: column;
+        top:0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        color:#fff;
+        font-size: 100px;
+        margin: 30px;
+        text-align: center;
+        font-family: 'Letra_NGE';
+    }
+    img{
+        text-align: center;
+        width: 500px;
+    }
+}
 @media screen and (max-width:700px) {
     .baners{
         flex-direction: column;
     }
 }
-/* @media screen and (max-width:2000px){
-#logo, #eva-esquina,aside,.titulo, .masde,.baners, .baners .baner-H, .baners .baner-P, .baners .baner-C,.baners .baner-D, span{
-    width: max-content;
-    height: max-content; 
-}   
-    
-}
-     */
-    

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@font-face {
+    font-family: Letra_NGE;
+    src: url(/Fuentes/Farmhand-Regular.ttf);
+}
+
+body{
+    background-image: url(/Pictures/fondopersonajes.jpg);
+    background-position: bottom;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#carouselExampleCaptions{
+    width: 100%;
+    max-height: 90%;
+    text-align: center;
+    border:15px solid #50B758;
+    border-radius: 65px;
+}
+
+img{
+    border-radius: 50px;
+    height: 800px;
+}
+
+.container-boton{
+    display: flex;
+    justify-content: center;
+}
+.container-boton .volveramain{
+    text-decoration: solid;
+    font-size: 100%;
+    color: #31e70c;
+    font-family: 'Righteous';
+    padding: 7px;
+    margin: 8px;
+    background-color: #ffe600;
+    width: 150px;
+    border: 0px;
+    border-radius: 22px 0;  
+    transition-property: background-color, width;
+    transition-duration: .3s;
+}
+.container-boton .volveramain:hover{
+    width: 160px;
+    background-color: #22f99f;
+}
+.container-boton .volveramain a{
+    text-decoration: solid;
+    color: #fff;
+}
+.advice{
+    display: none;
+}
+@media (max-width:900px)or (min-width:2160px) {
+    body *:not(.advice, .advice img, .min-screen, .min-screen *) {
+        display:none;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        background-image: radial-gradient(#775995,#6f1cc2);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .advice {
+        display: flex;
+        flex-direction:column ;
+        position: fixed;
+        flex-direction: column;
+        top:0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    p {
+        color:#fff;
+        font-size: 1.5rem;
+        margin: 30px;
+        text-align: center;
+        font-family: 'Letra_NGE';
+    }
+    strong {
+        color: #fff;
+    }
+    img{
+        text-align: center;
+        width: 150px;
+    }
+}
+@media (min-width:2160px) {
+    body *:not(.advice, .advice img, .min-screen, .min-screen *) {
+        display:none;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        background-image: radial-gradient(#775995,#6f1cc2);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .advice {
+        display: flex;
+        flex-direction:column ;
+        position: fixed;
+        flex-direction: column;
+        top:0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        color:#fff;
+        font-size: 100px;
+        margin: 30px;
+        text-align: center;
+        font-family: 'Letra_NGE';
+    }
+    strong {
+        color: #fff;
+    }
+    img{
+        text-align: center;
+        width: 500px;
+    }
+}
+@media screen and (max-width:700px) {
+    .baners{
+        flex-direction: column;
+    }
+}

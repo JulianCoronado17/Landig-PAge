@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@font-face {
+    font-family: Letra_NGE;
+    src: url(/Fuentes/Farmhand-Regular.ttf);
+}
+
+body{
+    background-image: url(/Pictures/Fondo.jpg);
+    margin: 0;
+    background-attachment: fixed;
+    background-repeat: round;
+}
+
+.img-superiores{
+    display:flex;
+    justify-content: space-between;
+}
+#logo{
+    width: 60%;
+}
+.eva_esquina{
+    text-align: right;
+}
+#eva-esquina{
+    width: 40%;
+}
+.titulo{
+    line-height: 70px;
+    color: white;
+    font-size:400%;
+    font-weight: 1200px ;
+    display: flex;
+    flex-direction: column;
+    letter-spacing:-2px;
+    font-family: 'Letra_NGE';
+}
+.masde a{
+    text-decoration: solid;
+    font-size: 100%;
+    color: #fff;
+    font-family: 'Righteous';
+}
+.masde{
+    padding: 7px;
+    margin: 8px;
+    background-color: #765798;
+    width: 150px;
+    border: 0px;
+    border-radius: 22px 0;  
+    transition-property: background-color, width;
+    transition-duration: .3s;
+}
+.masde:hover{
+    width: 160px;
+    background-color: #F99E22;
+}
+.baners{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+}
+.baners a{
+    text-decoration: solid;
+    color: #fff;
+}
+.baners .baner-H, .baners .baner-P, .baners .baner-C,.baners .baner-D,.baners .baner-T{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color:#1d1c21b9;
+    width:200px;
+    margin: auto;
+    text-align: center;
+    background-image: none;
+    border-radius: 20px;
+    margin: 20px;
+    backdrop-filter: blur(6px);
+    transition-property:background-color,backdrop-filter, width, background-image;
+    transition-duration:.3s;
+}
+.baners .baner-H:hover{
+    width: 250px;
+    background-image: url(/Pictures/fondo-historia.png);
+    backdrop-filter: blur(10px); 
+}
+.baners .baner-P:hover{
+    width: 250px;
+    background-image: url(/Pictures/fondo-personajes.png);
+    backdrop-filter: blur(10px); 
+}
+.baners .baner-C:hover{
+    width: 250px;
+    background-image: url(/Pictures/fondo-curiosidades.png);
+    backdrop-filter: blur(10px); 
+}
+.baners .baner-D:hover{
+    width: 250px;
+    background-image: url(/Pictures/fondo-dondeverlo.png);
+    backdrop-filter: blur(10px); 
+}
+.baners .baner-T:hover{
+    width: 250px;
+    background-image: url(/Pictures/Polera_Evangelion_NERV_600x.png);
+    backdrop-filter: blur(10px); 
+}
+ 
+.baners .baner-H span, .baners .baner-P span, .baners .baner-C span,.baners .baner-D span,.baners .baner-T span{
+    font-family: 'Letra_NGE';
+    font-size: 30px;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Oculta cualquier desbordamiento del video */
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* video cubre todo el contenedor */
+}
+.container-boton{
+    display: flex;
+    justify-content: center;
+}
+.container-boton .volveramain{
+    text-decoration: solid;
+    font-size: 100%;
+    color: #fff;
+    font-family: 'Righteous';
+    padding: 7px;
+    margin: 8px;
+    background-color: #765798;
+    width: 150px;
+    border: 0px;
+    border-radius: 22px 0;  
+    transition-property: background-color, width;
+    transition-duration: .3s;
+}
+.container-boton .volveramain:hover{
+    width: 160px;
+    background-color: #F99E22;
+}
+.container-boton .volveramain a{
+    text-decoration: solid;
+    color: #fff;
+}
+.advice{
+    display:none;
+}
+@media (max-width:300px)or (min-width:2160px) {
+    body *:not(.advice, .advice img, .min-screen, .min-screen *) {
+        display:none;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        background-image: radial-gradient(#775995,#6f1cc2);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .advice {
+        display: flex;
+        flex-direction:column ;
+        position: fixed;
+        flex-direction: column;
+        top:0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        color:#fff;
+        font-size: 1.5rem;
+        margin: 30px;
+        text-align: center;
+        font-family: 'Letra_NGE';
+    }
+    img{
+        text-align: center;
+        width: 150px;
+    }
+}
+@media (min-width:2160px) {
+    body *:not(.advice, .advice img, .min-screen, .min-screen *) {
+        display:none;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        background-image: radial-gradient(#775995,#6f1cc2);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .advice {
+        display: flex;
+        flex-direction:column ;
+        position: fixed;
+        flex-direction: column;
+        top:0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        color:#fff;
+        font-size: 100px;
+        margin: 30px;
+        text-align: center;
+        font-family: 'Letra_NGE';
+    }
+    img{
+        text-align: center;
+        width: 500px;
+    }
+}
+@media screen and (max-width:700px) {
+    .baners{
+        flex-direction: column;
+    }
+}

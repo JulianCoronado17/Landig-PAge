@@ -1,131 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @font-face {
     font-family: Letra_NGE;
-    src: url(Farmhand-Regular.ttf);
+    src: url(/Fuentes/Farmhand-Regular.ttf);
 }
 
 body{
-    background-image: url(Fondo.jpg);
-    margin: 0;
+    background-image: url(/Pictures/fondodondeverlo.png);
     background-attachment: fixed;
-    background-repeat: round;
-}
-
-.img-superiores{
-    display:flex;
-    justify-content: space-between;
-}
-#logo{
-    width: 60%;
-}
-.eva_esquina{
-    text-align: right;
-}
-#eva-esquina{
-    width: 40%;
-}
-.titulo{
-    line-height: 70px;
-    color: white;
-    font-size:400%;
-    font-weight: 1200px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
     display: flex;
     flex-direction: column;
-    letter-spacing:-2px;
-    font-family: 'Letra_NGE';
-}
-.masde a{
-    text-decoration: solid;
-    font-size: 100%;
-    color: #fff;
-    font-family: 'Righteous';
-}
-.masde{
-    padding: 7px;
-    margin: 8px;
-    background-color: #765798;
-    width: 150px;
-    border: 0px;
-    border-radius: 22px 0;  
-    transition-property: background-color, width;
-    transition-duration: .3s;
-}
-.masde:hover{
-    width: 160px;
-    background-color: #F99E22;
-}
-.baners{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
     align-items: center;
-    color: aliceblue;
 }
-.baners a{
-    text-decoration: solid;
-    color: #fff;
+.personajes ul li{
+    list-style-position: inside;
+    list-style-type: none;
 }
-.baners .baner-H, .baners .baner-P, .baners .baner-C,.baners .baner-D{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background-color:#1d1c21b9;
-    width:200px;
+section,header{
+    background-color:#1d1a2f38;
+    width:100%;
     margin: auto;
     text-align: center;
     background-image: none;
     border-radius: 20px;
     margin: 20px;
-    backdrop-filter: blur(6px);
-    transition-property:background-color,backdrop-filter, width, background-image;
-    transition-duration:.3s;
+    backdrop-filter: blur(8px);
+    font-family: 'Righteous';
+    font-size: large;
 }
-.baners .baner-H:hover{
-    width: 250px;
-    background-image: url(fondo-historia.png);
-    backdrop-filter: blur(10px); 
-}
-.baners .baner-P:hover{
-    width: 250px;
-    background-image: url(fondo-personajes.png);
-    backdrop-filter: blur(10px); 
-}
-.baners .baner-C:hover{
-    width: 250px;
-    background-image: url(fondo-curiosidades.png);
-    backdrop-filter: blur(10px); 
-}
-.baners .baner-D:hover{
-    width: 250px;
-    background-image: url(fondo-dondeverlo.png);
-    backdrop-filter: blur(10px); 
-}
- 
-.baners .baner-H span, .baners .baner-P span, .baners .baner-C span,.baners .baner-D span{
-    font-family: 'Letra_NGE';
-    font-size: 30px;
-}
-body, html {
-    margin: 0;
+
+.foto img{
     padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; /* Oculta cualquier desbordamiento del video */
+    margin: 5px;
+    width: 300px;
+    border: 7px solid#50B758;
+    border-radius: 50px;
+    animation: 2s img forwards
+}
+@keyframes img{
+    0%{width: 0px;}
+    100%{width: 300px;}
 }
 
-.video-container {
-    position: relative;
-    width: 100%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+strong{
+    color: #755695;
 }
-
-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* video cubre todo el contenedor */
+H1{
+   font-size: 300%;
+   color:whitesmoke;
+}
+h2{
+    color:orangered;
+    
+}
+h1,H2{
+    font-family: Letra_NGE;
 }
 .container-boton{
     display: flex;
@@ -138,7 +70,7 @@ video {
     font-family: 'Righteous';
     padding: 7px;
     margin: 8px;
-    background-color: #765798;
+    background-color: #8D1F26;
     width: 150px;
     border: 0px;
     border-radius: 22px 0;  
@@ -147,14 +79,14 @@ video {
 }
 .container-boton .volveramain:hover{
     width: 160px;
-    background-color: #F99E22;
+    background-color: #755695;
 }
 .container-boton .volveramain a{
     text-decoration: solid;
     color: #fff;
 }
 .advice{
-    display:none;
+    display: none;
 }
 @media (max-width:300px)or (min-width:2160px) {
     body *:not(.advice, .advice img, .min-screen, .min-screen *) {
@@ -185,13 +117,15 @@ video {
         justify-content: center;
         align-items: center;
     }
-
     p {
         color:#fff;
         font-size: 1.5rem;
         margin: 30px;
         text-align: center;
         font-family: 'Letra_NGE';
+    }
+    strong {
+        color: #fff;
     }
     img{
         text-align: center;
@@ -234,6 +168,9 @@ video {
         margin: 30px;
         text-align: center;
         font-family: 'Letra_NGE';
+    }
+    strong {
+        color: #fff;
     }
     img{
         text-align: center;

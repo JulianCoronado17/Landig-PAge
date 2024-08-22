@@ -9,17 +9,23 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-image: url(/Pictures/Fondo\ tienda.jpg);
+}
 
 html{
     scroll-behavior: smooth;
+    
 }
 .container_header{
-    background-color:#26062e;
+    background-color:#3033499b;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
+    border-radius: 35px;
+    backdrop-filter: blur(7px);
 }
 
 .container_header header{
@@ -32,7 +38,9 @@ html{
 .container_header header .logo a img{
     width:30%;
 }
-
+.container_header header .logo a img:hover{
+    width: 32%;
+}
 .container_header header ul{
     display: flex;
     list-style: none;
@@ -49,12 +57,12 @@ html{
     text-decoration: none;
 }
 .container_header header nav ul li a:hover{
-    color: #6f1cc2;
+    color: #56D357;
 }
 
 .nav_responsive{
     color: #fff;
-    background-color: orangered;
+    background-color: #775899;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;

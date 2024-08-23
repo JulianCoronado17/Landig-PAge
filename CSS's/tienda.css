@@ -76,8 +76,14 @@ html{
 h2{
     font-size: 110%;
 }
-img{
+
+.baners .baner img{
+    padding: 10px;
+    margin: 15px;
+    border-radius: 15px;
+    border: solid #56D357;
     width: 40%;
+    
 }
 .baners{
     flex-wrap: wrap;
@@ -98,13 +104,42 @@ img{
     margin: 2%;
     align-items: center;
 }
-.baner .h2{
-    align-self: center;
-    display: flex;
-    flex-wrap: wrap;
+.baners .baner h2{
+    color:#fff;
+    font-family: "Letra_NGE";
+    font-size: larger;
+    margin-bottom: 20px
+}
+.baners .baner p{
+    font-size: large;
+    font-weight: 700;
+    color: #E4DF8A;
+}
+.baners .baner p span{
+    color: #ce515a;
+}
+.baners .baner button{
+    /* Arreglar lo del boton q no mueva el content */
+    margin: 2%;
+    padding: 5%;
+    font-size: 250%;
+    background-color: transparent;
+    border: none;
+    transition-property: font-size;
+    transition-duration: 0.3s;
+}
+.baners .baner button:hover{
+    font-size: 260%;
+}
+.baners .baner button i{
+    padding: 10%;
+    color:#56D357;
+transition-property: color ;
 }
 
-
+.baners .baner strong{
+    color: #56D357;
+}
 
 
 

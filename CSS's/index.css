@@ -52,10 +52,11 @@ body{
 }
 .masde:hover{
     width: 160px;
-    background-color: #F99E22;
+    background-color: #f99f22;
 }
 .baners{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     justify-content: space-around;
     align-items: center;
@@ -245,6 +246,7 @@ video {
         width: 500px;
     }
 }
+
 @media screen and (max-width:700px) {
     .baners{
         flex-direction: column;

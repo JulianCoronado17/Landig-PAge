@@ -118,23 +118,21 @@ h2{
 .baners .baner p span{
     color: #ce515a;
 }
-.baners .baner button{
-    /* Arreglar lo del boton q no mueva el content */
-    margin: 2%;
-    padding: 5%;
+.baners .baner .contenedor-boton{
+    margin: 9%;
+    padding: 4%;
+}
+.baners .baner .contenedor-boton button{ 
     font-size: 250%;
     background-color: transparent;
+    color:#1D1C21;
     border: none;
-    transition-property: font-size;
-    transition-duration: 0.3s;
+    transition-property: color,font-size,box-shadow,transform;
+    transition-duration: 0.2s;
 }
-.baners .baner button:hover{
-    font-size: 260%;
-}
-.baners .baner button i{
-    padding: 10%;
-    color:#56D357;
-transition-property: color ;
+.baners .baner .contenedor-boton button:hover{
+    color: #56D357;
+    transform: scale(1.50); /* Aumenta el tamaño ligeramente */
 }
 
 .baners .baner strong{

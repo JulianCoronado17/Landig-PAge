@@ -50,40 +50,44 @@ html {
 
 .container_header header nav ul li a {
     font-family: "Letra_NGE";
-    font-size: 1.5rem; 
+    font-size: 2.5rem; 
     color: #fff;
     margin: 0 15px;
     padding: 3px;
     transition: color 0.5s; 
     text-decoration: none;
 }
+#figuras, #ropa, #mangas, #accesorios, #tienda {
+    margin-top: 120px; 
+}
+
 
 .container_header header nav ul li a:hover {
     color: #56D357;
 }
 
-/* Menú hamburguesa */
+
 .nav_responsive {
     color: #fff;
     background-color: #775899;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
-    display: none; /* Oculta el menú en pantallas grandes */
+    display: none; 
 }
 
-/* Menú desplegable */
+
 .nav_responsive.active + #nav {
     display: block;
 }
 
 #nav {
-    display: none; /* Oculta el menú por defecto en pantallas pequeñas */
+    display: block; 
 }
 
 @media (max-width: 700px) {
     .container_header header nav ul {
-        display: none; /* Oculta el menú de navegación en pantallas pequeñas */
+        display: none; 
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -94,24 +98,24 @@ html {
     }
 
     .container_header header nav ul.active {
-        display: flex; /* Muestra el menú cuando el ícono del menú hamburguesa está activo */
+        display: flex; 
     }
 
     .nav_responsive {
-        display: block; /* Muestra el ícono del menú hamburguesa en pantallas pequeñas */
+        display: block; 
     }
 }
 
-.figuras, .ropa {
-    margin-top: 94.23px; /* Ajusta el margen superior para dejar espacio debajo de la barra de navegación */
-    padding: 20px; /* Añade padding para mayor espacio */
+.figuras, .ropa,.manga,.accesorios {
+    margin-top: 94.23px; 
+    padding: 20px; 
 }
 
 h2 {
-    font-size: 1.5rem; /* Ajusta el tamaño de fuente de los títulos de las secciones */
-    color: #fff; /* Asegura que el texto sea visible sobre el fondo */
-    margin-bottom: 20px; /* Espacio debajo del título */
-    text-align: center; /* Centra los títulos de las secciones */
+    font-size: 1.5rem; 
+    color: #fff; 
+    margin-bottom: 20px; 
+    text-align: center; 
     font-family: "Letra_NGE";
 }
 
@@ -141,7 +145,7 @@ h2 {
     margin: 15px;
     border-radius: 15px;
     border: solid #56D357;
-    width: 100%; /* Ajusta la imagen para que ocupe el 100% del ancho del contenedor */
+    width: 100%; 
 }
 
 .baners .baner h2 {
@@ -167,7 +171,7 @@ h2 {
 }
 
 .baners .baner .contenedor-boton button {
-    font-size: 2.5rem; /* Ajusta el tamaño del botón */
+    font-size: 2.5rem; 
     background-color: transparent;
     color: #1D1C21;
     border: none;
@@ -186,6 +190,119 @@ h2 {
 .advice {
     display: none;
 }
+/* Estilos del carrito */
+#cart-container {
+    display: none; /* El carrito está oculto por defecto */
+    background-color: #3033499b;
+    position: fixed;
+    top: 20%;
+    right: 0;
+    width: 300px;
+    padding: 15px;
+    border-radius: 35px;
+    backdrop-filter: blur(17px);
+    z-index: 100;
+    color: #fff;
+    font-family: "Letra_NGE";
+    transition: transform 0.3s ease-in-out;
+}
+
+#cart-container.active {
+    display: block; /* El carrito se muestra cuando tiene la clase active */
+}
+
+#cart-container h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+#cart-items li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+#cart-total {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #56D357;
+}
+
+#cart-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #56D357;
+    color: #1D1C21;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#cart-container button:hover {
+    background-color: #4db348;
+    transform: scale(1.05);
+}
+
+/* Estilos del menú hamburguesa */
+.nav_responsive {
+    color: #fff;
+    background-color: #775899;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Oculta el menú en pantallas grandes */
+}
+
+#nav ul {
+    display: flex;
+    list-style: none;
+}
+
+#nav ul li a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#nav ul li a:hover {
+    color: #56D357;
+}
+
+@media (max-width: 700px) {
+    #nav ul {
+        display: none; /* Oculta el menú en pantallas pequeñas */
+        flex-direction: column;
+        background-color: #303349;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    #nav ul.active {
+        display: flex; /* Muestra el menú cuando el menú hamburguesa está activo */
+    }
+
+    .nav_responsive {
+        display: block; /* Muestra el icono del menú hamburguesa en pantallas pequeñas */
+    }
+}
+
 
 @media (max-width: 300px), (min-width: 2160px) {
     body *:not(.advice, .advice img, .min-screen, .min-screen *) {
@@ -280,7 +397,7 @@ h2 {
 
     .baner {
         max-width: 90%;
-        margin: 10px auto; /* Centramos los banners */
+        margin: 10px auto;
     }
 
     .baners .baner img {

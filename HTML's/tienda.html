@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/CSS's/tienda.css">
     <link rel="icon" href="/Pictures/icono.ico">
+    <script src="/JS/tienda.js"defer></script>
 </head>
 <body>
     <!--Aviso de dimensiones-->
@@ -23,22 +24,29 @@
                     <img src="/Pictures/logo.png" alt="Logo para ir al main">
                 </a>
             </div>
-                <nav id="nav">
-                    <ul>
-                        <li><a href="#figuras">FIGURAS</a></li>
-                        <li><a href="#ropa">ROPA</a></li>
-                        <li><a href="#mangas">MANGAS</a></li>
-                        <li><a href="#accesorios">ACCESORIOS</a></li>
-                        <li><a href="#tienda"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                    </ul>
-                </nav>
-                <div>
-                    <nav class="nav_responsive">
-                        <i class="fa-solid fa-bars"></i>
-                    </nav>
-                </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#figuras">FIGURAS</a></li>
+                    <li><a href="#ropa">ROPA</a></li>
+                    <li><a href="#mangas">MANGAS</a></li>
+                    <li><a href="#accesorios">ACCESORIOS</a></li>
+                    <li><a href="javascript:void(0);" onclick="toggleCart()">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="nav_responsive">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
             </div>
         </header>
+    </div>
+    
+    <!-- Carrito -->
+    <div id="cart-container">
+        <h2>Tu Carrito</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: $0</p>
+        <button onclick="clearCart()">Vaciar Carrito</button>
     </div>
     <section id="figuras" class="figuras">
         <div class="baners">
@@ -47,7 +55,7 @@
                 <h2>FIGURA DE ACCIÓN VARIABLE NGE EVA <strong>UNIT 01</strong> MATSUMURA</h2>
                 <p><span>$</span>238.427</p>
                 <div class="contenedor-boton">
-                    <button>
+                    <button onclick="addToCart(1, 'FIGURA DE ACCIÓN VARIABLE NGE EVA UNIT 01', 238427)">
                         <i class="fa-solid fa-cart-plus"></i>
                     </button>
                 </div>

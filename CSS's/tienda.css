@@ -4,24 +4,25 @@
     src: url(/Fuentes/Farmhand-Regular.ttf);
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-image: url(/Pictures/Fondo\ tienda.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover; /* Asegura que la imagen de fondo cubra toda la página */
 }
 
-
-html{
+html {
     scroll-behavior: smooth;
-    
 }
-.container_header{
-    background-color:#3033499b;
+
+.container_header {
+    background-color: #3033499b;
     position: fixed;
     width: 100%;
     top: 0;
@@ -31,71 +32,101 @@ html{
     backdrop-filter: blur(17px);
 }
 
-.container_header header{
-    max-width: auto;
+.container_header header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 17px;
 }
-.container_header header .logo a img{
-    width:30%;
+
+.container_header header .logo a img {
+    width: 30%;
 }
 
-.container_header header ul{
+.container_header header nav ul {
     display: flex;
     list-style: none;
 }
 
-.container_header header nav ul li a{
-    font-family:"Letra_NGE";
-    font-size: 300%;
-    text-align: none;
+.container_header header nav ul li a {
+    font-family: "Letra_NGE";
+    font-size: 1.5rem; 
     color: #fff;
     margin: 0 15px;
-    padding:3px;
-    transition: .5s;
+    padding: 3px;
+    transition: color 0.5s; 
     text-decoration: none;
 }
-.container_header header nav ul li a:hover{
+
+.container_header header nav ul li a:hover {
     color: #56D357;
 }
 
-.nav_responsive{
+/* Menú hamburguesa */
+.nav_responsive {
     color: #fff;
     background-color: #775899;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
-    display: none;
+    display: none; /* Oculta el menú en pantallas grandes */
 }
 
-.figuras{
-    margin-top: 94.23px;
-}
-h2{
-    font-size: 110%;
+/* Menú desplegable */
+.nav_responsive.active + #nav {
+    display: block;
 }
 
-.baners .baner img{
-    padding: 10px;
-    margin: 15px;
-    border-radius: 15px;
-    border: solid #56D357;
-    width: 40%;
-    
+#nav {
+    display: none; /* Oculta el menú por defecto en pantallas pequeñas */
 }
-.baners{
+
+@media (max-width: 700px) {
+    .container_header header nav ul {
+        display: none; /* Oculta el menú de navegación en pantallas pequeñas */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #303349;
+        padding: 10px;
+    }
+
+    .container_header header nav ul.active {
+        display: flex; /* Muestra el menú cuando el ícono del menú hamburguesa está activo */
+    }
+
+    .nav_responsive {
+        display: block; /* Muestra el ícono del menú hamburguesa en pantallas pequeñas */
+    }
+}
+
+.figuras, .ropa {
+    margin-top: 94.23px; /* Ajusta el margen superior para dejar espacio debajo de la barra de navegación */
+    padding: 20px; /* Añade padding para mayor espacio */
+}
+
+h2 {
+    font-size: 1.5rem; /* Ajusta el tamaño de fuente de los títulos de las secciones */
+    color: #fff; /* Asegura que el texto sea visible sobre el fondo */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    text-align: center; /* Centra los títulos de las secciones */
+    font-family: "Letra_NGE";
+}
+
+.baners {
     flex-wrap: wrap;
     margin: 7%;
     padding: 3%;
     display: flex;
     justify-content: space-around;
 }
-.baner{
+
+.baner {
     max-width: 30%;
     backdrop-filter: blur(6px);
-    border-radius:20px;
+    border-radius: 20px;
     padding: 3%;
     display: flex;
     flex-direction: column;
@@ -104,70 +135,61 @@ h2{
     margin: 2%;
     align-items: center;
 }
-.baners .baner h2{
-    color:#fff;
-    font-family: "Letra_NGE";
-    font-size: larger;
-    margin-bottom: 20px
+
+.baners .baner img {
+    padding: 10px;
+    margin: 15px;
+    border-radius: 15px;
+    border: solid #56D357;
+    width: 100%; /* Ajusta la imagen para que ocupe el 100% del ancho del contenedor */
 }
-.baners .baner p{
-    font-size: large;
+
+.baners .baner h2 {
+    color: #fff;
+    font-family: "Letra_NGE";
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.baners .baner p {
+    font-size: 1.2rem;
     font-weight: 700;
     color: #E4DF8A;
 }
-.baners .baner p span{
+
+.baners .baner p span {
     color: #ce515a;
 }
-.baners .baner .contenedor-boton{
+
+.baners .baner .contenedor-boton {
     margin: 9%;
     padding: 4%;
 }
-.baners .baner .contenedor-boton button{ 
-    font-size: 250%;
+
+.baners .baner .contenedor-boton button {
+    font-size: 2.5rem; /* Ajusta el tamaño del botón */
     background-color: transparent;
-    color:#1D1C21;
+    color: #1D1C21;
     border: none;
-    transition-property: color,font-size,box-shadow,transform;
-    transition-duration: 0.2s;
+    transition: color 0.2s, transform 0.2s;
 }
-.baners .baner .contenedor-boton button:hover{
+
+.baners .baner .contenedor-boton button:hover {
     color: #56D357;
-    transform: scale(1.50); /* Aumenta el tamaño ligeramente */
+    transform: scale(1.50); /* Ajusta el tamaño del botón al pasar el mouse */
 }
 
-.baners .baner strong{
+.baners .baner strong {
     color: #56D357;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.advice{
-    display:none;
+.advice {
+    display: none;
 }
-@media (max-width:300px)or (min-width:2160px) {
+
+@media (max-width: 300px), (min-width: 2160px) {
     body *:not(.advice, .advice img, .min-screen, .min-screen *) {
-        display:none;
+        display: none;
     }
 
     body {
@@ -176,7 +198,7 @@ h2{
         margin: 0;
         padding: 0;
         position: absolute;
-        background-image: radial-gradient(#775995,#6f1cc2);
+        background-image: radial-gradient(#775995, #6f1cc2);
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
@@ -184,10 +206,9 @@ h2{
 
     .advice {
         display: flex;
-        flex-direction:column ;
-        position: fixed;
         flex-direction: column;
-        top:0;
+        position: fixed;
+        top: 0;
         bottom: 0;
         right: 0;
         left: 0;
@@ -196,20 +217,21 @@ h2{
     }
 
     p {
-        color:#fff;
+        color: #fff;
         font-size: 1.5rem;
         margin: 30px;
         text-align: center;
         font-family: 'Letra_NGE';
     }
-    img{
-        text-align: center;
+
+    img {
         width: 150px;
     }
 }
-@media (min-width:2160px) {
+
+@media (min-width: 2160px) {
     body *:not(.advice, .advice img, .min-screen, .min-screen *) {
-        display:none;
+        display: none;
     }
 
     body {
@@ -218,7 +240,7 @@ h2{
         margin: 0;
         padding: 0;
         position: absolute;
-        background-image: radial-gradient(#775995,#6f1cc2);
+        background-image: radial-gradient(#775995, #6f1cc2);
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
@@ -226,10 +248,9 @@ h2{
 
     .advice {
         display: flex;
-        flex-direction:column ;
-        position: fixed;
         flex-direction: column;
-        top:0;
+        position: fixed;
+        top: 0;
         bottom: 0;
         right: 0;
         left: 0;
@@ -238,19 +259,31 @@ h2{
     }
 
     p {
-        color:#fff;
+        color: #fff;
         font-size: 100px;
         margin: 30px;
         text-align: center;
         font-family: 'Letra_NGE';
     }
-    img{
-        text-align: center;
+
+    img {
         width: 500px;
     }
 }
-@media screen and (max-width:700px) {
-    .baners{
+
+@media screen and (max-width: 700px) {
+    .baners {
         flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .baner {
+        max-width: 90%;
+        margin: 10px auto; /* Centramos los banners */
+    }
+
+    .baners .baner img {
+        width: 100%;
     }
 }

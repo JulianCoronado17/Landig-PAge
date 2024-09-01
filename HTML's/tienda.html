@@ -46,135 +46,37 @@
         <h2>Tu Carrito</h2>
         <ul id="cart-items"></ul>
         <p id="cart-total">Total: $0</p>
-        <button onclick="clearCart()">Vaciar Carrito</button>
+        <button id="Vaciar" onclick="clearCart()" style="display: none;">Vaciar Carrito</button>
+        <a id="pagar" onclick="checkout()" style="display: none;"><button>Pagar</button></a>
+        
     </div>
+    
+    <div id="thank-you-popup" class="popup">
+        <div class="popup-content">
+            <span id="close-popup" class="close">&times;</span>
+            <h2>Gracias por tu compra</h2>
+        </div>
+    </div>
+    
+    
     <section id="figuras" class="figuras">
         <div class="baners">
-            <div class="baner">
-                <img src="/Pictures/Figura1.png" alt="Figura1">
-                <h2>FIGURA DE ACCIÓN VARIABLE NGE EVA <strong>UNIT 01</strong> MATSUMURA</h2>
-                <p><span>$</span>238.427</p>
-                <div class="contenedor-boton">
-                    <button onclick="addToCart(1, 'FIGURA DE ACCIÓN VARIABLE NGE EVA UNIT 01', 238427)">
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="baner">
-                <img src="/Pictures/Figura2.png" alt="Figura2">
-                <h2>Figura de acción <strong>Evangelion</strong> EVA TIPO <strong>EVA-01</strong> </h2>
-                <p><span>$</span>116.722</p>
-                <div class="contenedor-boton">
-                    <button>
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="baner">
-                <img src="/Pictures/figura3.png" alt="Figura3">
-                <h2>KAIYODO Neón Genesis <strong>Evangelion</strong> ANIMA Figura <strong>Eva Unidad 01</strong> EVA-017 17 cm</h2>
-                <p><span>$</span>724.905</p>
-                <div class="contenedor-boton">
-                    <button>
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="baner">
-                <img src="/Pictures/figura4.png" alt="Figura4">
-                <h2><strong>Evangelion</strong>: 2.0 YOU CAN (NOT) ADVANCE figura <strong>Eva 01</strong> Awakened Ichibankuji</h2>
-                <p><span>$</span>516.129</p>
-                <div class="contenedor-boton">
-                    <button>
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="baner">
-                <img src="/Pictures/figura5.png" alt="Figura5">
-                <h2><strong>Evangelion Souryuu Asuka Langley</strong> última versión figura Ichiban Kuji</h2>
-                <p><span>$</span>354.838</p>
-                <div class="contenedor-boton">
-                    <button>
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="baner">
-                <img src="/Pictures/figura6.png" alt="Figura6">
-                <h2>Figura <strong>Evangelion EVA-08</strong> ROBOT Soul SIDE <strong>EVA</strong> Evangelion 8 β BANDAI</h2>
-                <p><span>$</span>338.306</p>
-                <div class="contenedor-boton">
-                    <button>
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </div>
-            </div>
+            
         </div>
     </section>
     <section class="ropa" id="ropa">
         <div class="baners">
-            <div class="baner">
-                <img src="/Pictures/ropa1.png" alt="ropa1">
-                <h2><strong>CAMISETA NGE</strong> NEGRA CON ESTAMPADO <strong>EVA-01</strong> </h2>
-                <p><span>$</span>35.000</p>
-                <div class="contenedor-boton">
-                    <button>
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="baner">
-                <img src="/Pictures/ropa2.png" alt="ropa2">
-                <h2><strong>CAMISETA NGE</strong> BLANCA CON ESTAMPADO <strong>EVA-02</strong> </h2>
-                <p><span>$</span>35.000</p>
-                <div class="contenedor-boton">
-                    <button>
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="baner">
-                <img src="/Pictures/ropa3.png" alt="ropa3">
-                <h2><strong>BUZO NGE</strong> BLANCO CON ESTAMPADO<strong>PILOTOS</strong> </h2>
-                <p><span>$</span>53.000</p>
-                <div class="contenedor-boton">
-                    <button>
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="baner">
-                <img src="/Pictures/ropa4.png" alt="ropa4">
-                <h2><strong>BUZO NGE</strong> BLANCO CON ESTAMPADO<strong>EVANGELION LORE</strong> </h2>
-                <p><span>$</span>53.000</p>
-                <div class="contenedor-boton">
-                    <button>
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="baner"> 
-                <!-- terminar ropa 5 y ropa 6 -->
-                <img src="/Pictures/ropa5.png" alt="ropa5">
-                <h2><strong>Hoodie Evangelion</strong> negro EVA01 XL</h2>
-                <p><span>$</span>354.838</p>
-                <div class="contenedor-boton">
-                    <button>
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="baner">
-                <img src="/Pictures/ropa6.png" alt="ropa6">
-                <h2><strong>Hoodie Evangelion</strong> negro Rei Anayami XL</h2>
-                <p><span>$</span>338.306</p>
-                <div class="contenedor-boton">
-                    <button>
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </div>
-            </div>
+            
+        </div>
+    </section>
+    <section class="mangas" id="mangas">
+        <div class="baners">
+            
+        </div>
+    </section>
+    <section class="accesorios" id="accesorios">
+        <div class="baners">
+            
         </div>
     </section>
 </body>

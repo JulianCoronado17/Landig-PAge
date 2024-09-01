@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "name": "FIGURA DE ACCIÓN VARIABLE NGE EVA UNIT 01",
+    "category":"figuras",
+    "price": 238427,
+    "image": "/Pictures/Figura1.png"
+  },
+  {
+    "id": 2,
+    "name": "Figura de acción Evangelion EVA TIPO EVA-01",
+    "category":"figuras",
+    "price": 116722,
+    "image": "/Pictures/Figura2.png"
+  },
+  {
+    "id": 3,
+    "name": "KAIYODO Neón Genesis Evangelion EVA-017",
+    "category":"figuras",
+    "price": 724905,
+    "image": "/Pictures/figura3.png"
+  },
+  {
+    "id": 4,
+    "name": "Evangelion: 2.0 YOU CAN (NOT) ADVANCE Eva 01",
+    "category":"figuras",
+    "price": 516129,
+    "image": "/Pictures/figura4.png"
+  },
+  {
+    "id": 5,
+    "name": "Evangelion Souryuu Asuka Langley",
+    "category":"figuras",
+    "price": 354838,
+    "image": "/Pictures/figura5.png"
+  },
+  {
+    "id": 6,
+    "name": "Figura Evangelion EVA-08 ROBOT Soul",
+    "category":"figuras",
+    "price": 338306,
+    "image": "/Pictures/figura6.png"
+  },
+  {
+    "id": 7,
+    "name": "CAMISETA NGE NEGRA CON ESTAMPADO EVA-01",
+    "category":"ropa",
+    "price": 35999,
+    "image": "/Pictures/ropa1.png"
+  },
+  {
+    "id": 8,
+    "name": "CAMISETA NGE BLANCA CON ESTAMPADO EVA-02",
+    "category":"ropa",
+    "price": 35999,
+    "image": "/Pictures/ropa2.png"
+  },
+  {
+    "id": 9,
+    "category":"ropa",
+    "name": "BUZO NGE BLANCO CON ESTAMPADO PILOTOS",
+    "price": 53000,
+    "image": "/Pictures/ropa3.png"
+  },
+  {
+    "id": 10,
+    "name": "BUZO NGE BLANCO CON ESTAMPADO EVANGELION LORE",
+    "category":"ropa",
+    "price": 53000,
+    "image": "/Pictures/ropa4.png"
+  },
+  {
+    "id": 11,
+    "name": "BUZO NGE BLANCO CON ESTAMPADO EVANGELION LORE",
+    "category":"ropa",
+    "price": 53000,
+    "image": "/Pictures/ropa5.png"
+  },
+  {
+    "id": 12,
+    "name": "BUZO NGE BLANCO CON ESTAMPADO EVANGELION LORE",
+    "category":"ropa",
+    "price": 53000,
+    "image": "/Pictures/ropa6.png"
+  },
+  {
+    "id":13,
+    "name":"Neon Genesis Evangelion Juego Manga 3 en 1 en Inglés COMPLETO-",
+    "category":"mangas",
+    "price":825366,
+    "image":"/Pictures/manga1.png"
+  },
+  {
+    "id":14,
+    "name":"Conjunto Manga Inglés Neon Genesis Evangelion Serie Volúmenes 1-3 por Y. Sadamoto-",
+    "category":"mangas",
+    "price":123811,
+    "image":"/Pictures/manga2.png"
+  },
+  {
+    "id":15,
+    "name":"Conjunto Manga Inglés Neon Genesis Evangelion Serie Vol 1-3 5, 6 Viz Novelas Gráficas-",
+    "category":"mangas",
+    "price":148573,
+    "image":"/Pictures/manga3.png"
+  },
+  {
+    "id":16,
+    "name":"Neon Genesis Evangelion Vol. 11 Viz! Manga Eng Volumen 11 2008 Fuera de existencia",
+    "category":"mangas",
+    "price":226987,
+    "image":"/Pictures/manga4.png"
+  },
+  {
+    "id":17,
+    "name":"Neon Genesis Evangelion Vol. 13- MANGA RARO OOP - Yoshiyuki Sadamoto - Inglés-",
+    "category":"mangas",
+    "price":165081,
+    "image":"/Pictures/manga5.png"
+  },
+  {
+    "id":18,
+    "name":"Juego completo de cómics Neon Genesis Evangelion (versión CVS) Vol.1-5 versión manga japonés-",
+    "category":"mangas",
+    "price":326036,
+    "image":"/Pictures/manga6.png"
+  },
+  {
+    "id":19,
+    "name":"Pin de clip para accesorios para el cabello Evangelion-",
+    "category":"accesorios",
+    "price":163389  ,
+    "image":"/Pictures/acce1.png"
+  },
+  {
+    "id":20,
+    "name":"Evangelion Goods Juego de 4 Piezas",
+    "category":"accesorios",
+    "price":148944,
+    "image":"/Pictures/acce2.png"
+  },
+  {
+    "id":21,
+    "name":"Juego de 8 piezas Evangelion Ichibankuji-",
+    "category":"accesorios",
+    "price":134293,
+    "image":"/Pictures/acce3.png"
+  },
+  {
+    "id":22,
+    "name":"Juego de 6 piezas Evangelion Ichibankuji-",
+    "category":"accesorios",
+    "price":120055,
+    "image":"/Pictures/acce4.png"
+  },
+  {
+    "id":23,
+    "name":"Llavero Neon Genesis Evangelion Unit 01 Insignia-",
+    "category":"accesorios",
+    "price":41229,
+    "image":"/Pictures/acce5.png"
+  },
+  {
+    "id":24,
+    "name":"Auriculares inalámbricos Bluetooth STUMPE x Evangelion EVA-01-",
+    "category":"accesorios",
+    "price":445720,
+    "image":"/Pictures/acce6.png"
+  }
+]
